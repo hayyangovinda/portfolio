@@ -334,6 +334,9 @@ footer {
     padding: 10px;
     background-color: var(--overlay);
     backdrop-filter: blur(4px);
+    margin-left: 0;
+    margin-right: 0;
+    left: 0;
   }
 
   .light {
@@ -370,5 +373,44 @@ footer {
 
   .container.about-me h1 {
     font-size: 36px;
+  }
+}
+
+@media (max-width: 390px) {
+  .intro {
+    left: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .intro p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 365px) {
+  .about-me-desc ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .container nav h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 325px) {
+  .intro p {
+    font-size: 12px;
+  }
+  .intro {
+    font-size: 12px;
+    text-wrap: wrap;
+  }
+
+  .intro strong {
+    font-size: 20px;
+    text-wrap: wrap;
   }
 }

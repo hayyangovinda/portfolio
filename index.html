@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hayyan PortFolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <h1>H.</h1>
+        <div class="links">
+          <a href="#">Home</a>
+          <a href="#about-me">About</a>
+          <a
+            href="https://hayyangovinda.github.io/mini-projects/Home"
+            target="_blank"
+            >Projects</a
+          >
+          <a href="#contact">Contact</a>
+        </div>
+
+        <button class="btn" onclick="scrollToSection('contact')">
+          Contact Me
+        </button>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="light"
+          id="dark-mode-toggle"
+        >
+          <path
+            d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+          />
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </nav>
+
+      <div class="intro">
+        <p>
+          Hello,<br />
+          I'm Hayyan <br />
+        </p>
+        <strong>Web Developer</strong>
+        <p class="introduction"></p>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------About ME-------------------------- -->
+
+    <div class="container about-me">
+      <h1 id="about-me">About Me</h1>
+
+      <div>
+        <img src="" />
+      </div>
+      <div class="about-me-desc">
+        <p class="about-me-para">
+          I'm a passionate web developer with a strong emphasis on writing
+          clean, efficient code and following best practices. Proficient in
+          JavaScript, HTML, CSS, and Angular, I create dynamic web applications
+          with a focus on user-centric design and functionality.
+        </p>
+
+        <h3>Key Skills:</h3>
+
+        <ul>
+          <li>
+            <div class=""><img src="/ng.png" alt="" /></div>
+            <label>Angular</label>
+          </li>
+          <li>
+            <div class=""><img src="/js.png" alt="" /></div>
+            <label>JavaScript</label>
+          </li>
+          <li>
+            <div class=""><img src="/html.png" alt="" /></div>
+            <label>HTML</label>
+          </li>
+          <li>
+            <div class=""><img src="/css.png" alt="" /></div>
+            <label>CSS</label>
+          </li>
+          <li>
+            <div class=""><img src="/ts.png" alt="" /></div>
+            <label>TypeScript</label>
+          </li>
+          <li>
+            <div class=""><img src="/twind.png" alt="" /></div>
+            <label>Tailwind</label>
+          </li>
+          <li>
+            <div class=""><img src="/bs.png" alt="" /></div>
+            <label>Bootstrap</label>
+          </li>
+          <li>
+            <div class=""><img src="/git.png" alt="" /></div>
+            <label>Git</label>
+          </li>
+        </ul>
+
+        <button class="about-btn btn">Check My Mini Projects</button>
+      </div>
+      <div class="container contact">
+        <h1 id="contact">Contact me</h1>
+        <div class="contact-form">
+          <h3>
+            Please fill out the form below to discuss any work opportunities.
+          </h3>
+
+          <input type="text" placeholder="Your Name" />
+          <input type="text" placeholder="Your Email" />
+          <textarea placeholder="Your Message" rows="10"></textarea>
+
+          <button class="btn">Submit</button>
+        </div>
+      </div>
+      <footer>
+        <p>Copyright © 2023 Hayyan Govinda.All Rights Reserved.</p>
+      </footer>
+    </div>
+
+    <script>
+      const darkModeToggle = document.getElementById("dark-mode-toggle");
+      const body = document.body;
+
+      darkModeToggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+      });
+
+      const div = document.querySelector(".introduction");
+      const text = `I am a skilled and passionate web developer <br>
+      with experience in creating visually appealing and user-friendly
+      websites.`;
+
+      function textTypingEffect(element, text, i = 0) {
+        if (i < text.length) {
+          if (text[i] === "<") {
+            // If the current character is "<," find the closing ">" for the HTML tag.
+            const endIndex = text.indexOf(">", i);
+            if (endIndex !== -1) {
+              element.innerHTML += text.substring(i, endIndex + 1);
+              i = endIndex + 1;
+            }
+          } else {
+            element.innerHTML += text[i];
+            i++;
+          }
+
+          setTimeout(() => textTypingEffect(element, text, i), 50);
+        }
+      }
+
+      textTypingEffect(div, text, 0);
+
+      function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    </script>
+  </body>
+</html>
